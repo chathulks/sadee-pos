@@ -1,0 +1,20 @@
+.icon {
+    font-size: 35px;
+}
+
+.my-card:hover {
+    background-color: rgb(52, 0, 100);
+    color: white;
+    transition: all 0.5s;
+}
+
+.my-card:hover .icon {
+    color: white;
+    font-size: 35px;
+    transition: all 0.5s;
+}
+
+.title-text {
+    font-size: 20px;
+}
+

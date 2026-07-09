@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>SADEE || POS</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <button type="button" class="btn btn-dark mt-4 mb-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Customer Manageing
+        </button>
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Mobile</th>
+                    <th>E-mail</th>
+                    <th>City</th>
+                    <th>Address Line 1</th>
+                    <th>Address Line 2</th>
+                    <th>Gender</th>
+                    <th>Status</th>
+                    <th>Barcode</th>
+                </tr>
+                <table class="table table-hover" id="cus-details-table">
+                    <tr>
+                        <td>1</td>
+                        <td>First Name</td>
+                        <td>Last Name</td>
+                        <td>Mobile</td>
+                        <td>E-mail</td>
+                        <td>City</td>
+                        <td>Address Line 1</td>
+                        <td>Address Line 2</td>
+                        <td>Gender</td>
+                        <td>Status</td>
+                        <td>Barcode</td>
+                    </tr>
+                </table>
+                <caption>List of customers</caption>
+            </table>
+        </div>
+    </div>
+
+    <!-- Modal Start-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Customer Mangement</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-5">
+                    <!-- Customer Manage Start -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label for="inputPassword4" class="form-label">First Name</label>
+                                        <input type="text" class="form-control" placeholder="Sadeesha"
+                                            aria-label="First name">
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="inputPassword4" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" placeholder="Chathumal"
+                                            aria-label="Last name">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="inputPassword4" class="form-label">Mobile</label>
+                                    <input type="text" class="form-control" placeholder="07x x xxx xxx"
+                                        aria-label="Mobile">
+                                </div>
+                                <div class="col-12">
+                                    <label for="inputPassword4" class="form-label">E-mail</label>
+                                    <input type="text" class="form-control" placeholder="abc@gmail.com"
+                                        aria-label="E-mail">
+                                </div>
+                                <div class="col-12">
+                                    <label for="inputPassword4" class="form-label">City</label>
+                                    <input type="text" class="form-control" placeholder="Kalutara" aria-label="City">
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label for="inputPassword4" class="form-label">Address Line 1</label>
+                                        <input type="text" class="form-control" placeholder="Minikandala"
+                                            aria-label="Address Line 1">
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="inputPassword4" class="form-label">Address Line 2</label>
+                                        <input type="text" class="form-control" placeholder="Pelenda"
+                                            aria-label="Address Line 2">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="inputPassword4" class="form-label">Gender</label>
+                                    <select id="inputState" class="form-select">
+                                        <option selected>Choose...</option>
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                    </select>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label for="inputPassword4" class="form-label">Status</label>
+                                        <select id="inputState" class="form-select">
+                                            <option selected>Choose...</option>
+                                            <option>Active</option>
+                                            <option>Inactive</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="inputPassword4" class="form-label">Barcode</label>
+                                        <input type="text" class="form-control" placeholder="0012-3456-789"
+                                            aria-label="Address Line 2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Customer Manage End -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Update</button>
+                    <button type="button" class="btn btn-warning">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Model End -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
