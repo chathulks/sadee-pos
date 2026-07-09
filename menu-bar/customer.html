@@ -15,9 +15,8 @@
 <body>
 
     <div class="container">
-        <button type="button" class="btn btn-dark mt-4 mb-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Customer Manageing
-        </button>
+        <input type="button" class="btn btn-dark mt-4 mb-4" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            value="Customer Manageing">
         <div class="table-responsive">
             <table class="table table-hover">
                 <tr>
@@ -70,43 +69,44 @@
                                     <div class="col-6">
                                         <label for="inputPassword4" class="form-label">First Name</label>
                                         <input type="text" class="form-control" placeholder="Sadeesha"
-                                            aria-label="First name">
+                                            aria-label="First name" id="fname">
                                     </div>
                                     <div class="col-6">
                                         <label for="inputPassword4" class="form-label">Last Name</label>
                                         <input type="text" class="form-control" placeholder="Chathumal"
-                                            aria-label="Last name">
+                                            aria-label="Last name" id="lname">
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <label for="inputPassword4" class="form-label">Mobile</label>
                                     <input type="text" class="form-control" placeholder="07x x xxx xxx"
-                                        aria-label="Mobile">
+                                        aria-label="Mobile" id="mobile">
                                 </div>
                                 <div class="col-12">
                                     <label for="inputPassword4" class="form-label">E-mail</label>
                                     <input type="text" class="form-control" placeholder="abc@gmail.com"
-                                        aria-label="E-mail">
+                                        aria-label="E-mail" id="email">
                                 </div>
                                 <div class="col-12">
                                     <label for="inputPassword4" class="form-label">City</label>
-                                    <input type="text" class="form-control" placeholder="Kalutara" aria-label="City">
+                                    <input type="text" class="form-control" placeholder="Kalutara" aria-label="City"
+                                        id="city">
                                 </div>
                                 <div class="row">
                                     <div class="col-6">
                                         <label for="inputPassword4" class="form-label">Address Line 1</label>
                                         <input type="text" class="form-control" placeholder="Minikandala"
-                                            aria-label="Address Line 1">
+                                            aria-label="Address Line 1" id="add-line-1">
                                     </div>
                                     <div class="col-6">
                                         <label for="inputPassword4" class="form-label">Address Line 2</label>
                                         <input type="text" class="form-control" placeholder="Pelenda"
-                                            aria-label="Address Line 2">
+                                            aria-label="Address Line 2" id="add-line-2">
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <label for="inputPassword4" class="form-label">Gender</label>
-                                    <select id="inputState" class="form-select">
+                                    <select id="gender" class="form-select">
                                         <option selected>Choose...</option>
                                         <option>Male</option>
                                         <option>Female</option>
@@ -115,7 +115,7 @@
                                 <div class="row">
                                     <div class="col-6">
                                         <label for="inputPassword4" class="form-label">Status</label>
-                                        <select id="inputState" class="form-select">
+                                        <select id="status" class="form-select">
                                             <option selected>Choose...</option>
                                             <option>Active</option>
                                             <option>Inactive</option>
@@ -124,7 +124,7 @@
                                     <div class="col-6">
                                         <label for="inputPassword4" class="form-label">Barcode</label>
                                         <input type="text" class="form-control" placeholder="0012-3456-789"
-                                            aria-label="Address Line 2">
+                                            aria-label="Address Line 2" id="barcode">
                                     </div>
                                 </div>
                             </div>
@@ -133,9 +133,9 @@
                     <!-- Customer Manage End -->
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Update</button>
-                    <button type="button" class="btn btn-warning">Add</button>
+                    <input type="button" class="btn btn-secondary" data-bs-dismiss="modal" value="Close">
+                    <input type="button" class="btn btn-primary" value="Update">
+                    <input type="button" class="btn btn-warning" value="Add">
                 </div>
             </div>
         </div>
