@@ -1,3 +1,4 @@
+let CustomerArray = [];
 function AddCustomer() {
     let fname = document.getElementById("fname").value;
     let lname = document.getElementById("lname").value;
@@ -23,5 +24,30 @@ function AddCustomer() {
         barcode: barcode
     }
 
-    console.log(Custmoer);
+    CustomerArray.push(Custmoer);
+    CustomerTableLoad();
+    console.log(CustomerArray);
+}
+
+function CustomerTableLoad() {
+    let body = "";
+    let cus_details_table = document.getElementById("cus_details_table");
+    for (let i = 0; i < CustomerArray.length; i++) {
+        body += `
+            <tr>
+                <td>${i + 1}</td>
+                <td>${CustomerArray[i].fname}</td>
+                <td>${CustomerArray[i].lname}</td>
+                <td>${CustomerArray[i].mobile}</td>
+                <td>${CustomerArray[i].email}</td>
+                <td>${CustomerArray[i].city}</td>
+                <td>${CustomerArray[i].add_line_1}</td>
+                <td>${CustomerArray[i].add_line_2}</td>
+                <td>${CustomerArray[i].gender}</td>
+                <td>${CustomerArray[i].status}</td>
+                <td>${CustomerArray[i].barcode}</td>
+            </tr>
+        `;
+    }
+    cus_details_table.innerHTML = body;
 }

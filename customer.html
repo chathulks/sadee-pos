@@ -14,42 +14,33 @@
 
 <body>
 
-    <div class="container">
+    <div class="container p">
         <input type="button" class="btn btn-dark mt-4 mb-4" data-bs-toggle="modal" data-bs-target="#exampleModal"
             value="Customer Manageing">
-        <div class="table-responsive">
+
+        <div class="table-responsive-md">
             <table class="table table-hover">
-                <tr>
-                    <th>#</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Mobile</th>
-                    <th>E-mail</th>
-                    <th>City</th>
-                    <th>Address Line 1</th>
-                    <th>Address Line 2</th>
-                    <th>Gender</th>
-                    <th>Status</th>
-                    <th>Barcode</th>
-                </tr>
-                <table class="table table-hover" id="cus-details-table">
+                <thead>
                     <tr>
-                        <td>1</td>
-                        <td>First Name</td>
-                        <td>Last Name</td>
-                        <td>Mobile</td>
-                        <td>E-mail</td>
-                        <td>City</td>
-                        <td>Address Line 1</td>
-                        <td>Address Line 2</td>
-                        <td>Gender</td>
-                        <td>Status</td>
-                        <td>Barcode</td>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Mobile</th>
+                        <th>E-mail</th>
+                        <th>City</th>
+                        <th>Address Line 1</th>
+                        <th>Address Line 2</th>
+                        <th>Gender</th>
+                        <th>Status</th>
+                        <th>Barcode</th>
                     </tr>
-                </table>
-                <caption>List of customers</caption>
+                </thead>
+                <tbody id="cus_details_table">
+                </tbody>
             </table>
+            <h6 class="text-center mb-3 fst-italic fw-lighter">List of customers</h6>
         </div>
+
     </div>
 
     <!-- Modal Start-->
