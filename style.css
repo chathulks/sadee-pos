@@ -18,3 +18,19 @@
     font-size: 20px;
 }
 
+.botom-nav-hover {
+    color: #949494;
+}
+
+.botom-nav-hover:hover {
+    color: #ff5900;
+    transition: 0.5s;
+}
+
+.botom-icon {
+    font-size: 27px;
+}
+
+.botom-nav-text {
+    font-size: 12px;
+}
