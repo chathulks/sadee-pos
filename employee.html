@@ -14,6 +14,118 @@
 
 <body>
 
+    <div class="container">
+        <input type="button" class="btn btn-dark mt-4 mb-4" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            value="Employees Manageing">
+
+        <div class="table-responsive" style="height: 500px;">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Mobile</th>
+                        <th>E-mail</th>
+                        <th>City</th>
+                        <th>Address Line 1</th>
+                        <th>Address Line 2</th>
+                        <th>Gender</th>
+                        <th>Status</th>
+                        <th>Barcode</th>
+                    </tr>
+                </thead>
+                <tbody id="emp_details_table">
+                </tbody>
+            </table>
+            <h6 class="text-center mb-3 fst-italic fw-lighter">List of employees</h6>
+        </div>
+
+    </div>
+
+    <!-- Modal Start-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Employees Mangement</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-5">
+                    <!-- Customer Manage Start -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label for="inputPassword4" class="form-label">First Name</label>
+                                        <input type="text" class="form-control" placeholder="Sadeesha" id="fname">
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="inputPassword4" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" placeholder="Chathumal" id="lname">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="inputPassword4" class="form-label">Mobile</label>
+                                    <input type="text" class="form-control" placeholder="07x x xxx xxx" id="mobile">
+                                </div>
+                                <div class="col-12">
+                                    <label for="inputPassword4" class="form-label">E-mail</label>
+                                    <input type="text" class="form-control" placeholder="abc@gmail.com" id="email">
+                                </div>
+                                <div class="col-12">
+                                    <label for="inputPassword4" class="form-label">City</label>
+                                    <input type="text" class="form-control" placeholder="Kalutara" id="city">
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label for="inputPassword4" class="form-label">Address Line 1</label>
+                                        <input type="text" class="form-control" placeholder="Minikandala"
+                                            id="add-line-1">
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="inputPassword4" class="form-label">Address Line 2</label>
+                                        <input type="text" class="form-control" placeholder="Pelenda" id="add-line-2">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="inputPassword4" class="form-label">Gender</label>
+                                    <select id="gender" class="form-select">
+                                        <option selected>Choose...</option>
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                    </select>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label for="inputPassword4" class="form-label">Status</label>
+                                        <select id="status" class="form-select">
+                                            <option selected>Choose...</option>
+                                            <option>Active</option>
+                                            <option>Inactive</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="inputPassword4" class="form-label">Barcode</label>
+                                        <input type="text" class="form-control" placeholder="0012-3456-789"
+                                            id="barcode">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Customer Manage End -->
+                </div>
+                <div class="modal-footer">
+                    <input type="button" class="btn btn-secondary" data-bs-dismiss="modal" value="Close">
+                    <input type="button" class="btn btn-primary" value="Update">
+                    <input type="button" class="btn btn-warning" value="Add" onclick="AddEmployees()">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Model End -->
 
     <!-- Nav Botom Start -->
     <nav class="navbar fixed-bottom">

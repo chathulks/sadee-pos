@@ -51,3 +51,57 @@ function CustomerTableLoad() {
     }
     cus_details_table.innerHTML = body;
 }
+
+let EmployeesArray = [];
+function AddEmployees() {
+    let fname = document.getElementById("fname").value;
+    let lname = document.getElementById("lname").value;
+    let mobile = document.getElementById("mobile").value;
+    let email = document.getElementById("email").value;
+    let city = document.getElementById("city").value;
+    let add_line_1 = document.getElementById("add-line-1").value;
+    let add_line_2 = document.getElementById("add-line-2").value;
+    let gender = document.getElementById("gender").value;
+    let status = document.getElementById("status").value;
+    let barcode = document.getElementById("barcode").value;
+
+    let Employees = {
+        fname: fname,
+        lname: lname,
+        mobile: mobile,
+        email: email,
+        city: city,
+        add_line_1: add_line_1,
+        add_line_2: add_line_2,
+        gender: gender,
+        status: status,
+        barcode: barcode
+    }
+
+    EmployeesArray.push(Employees);
+    EmployeeTableLoad();
+    console.log(EmployeesArray);
+}
+
+function EmployeeTableLoad() {
+    let body = "";
+    let emp_details_table = document.getElementById("emp_details_table");
+    for (let i = 0; i < EmployeesArray.length; i++) {
+        body += `
+            <tr>
+                <td>${i + 1}</td>
+                <td>${EmployeesArray[i].fname}</td>
+                <td>${EmployeesArray[i].lname}</td>
+                <td>${EmployeesArray[i].mobile}</td>
+                <td>${EmployeesArray[i].email}</td>
+                <td>${EmployeesArray[i].city}</td>
+                <td>${EmployeesArray[i].add_line_1}</td>
+                <td>${EmployeesArray[i].add_line_2}</td>
+                <td>${EmployeesArray[i].gender}</td>
+                <td>${EmployeesArray[i].status}</td>
+                <td>${EmployeesArray[i].barcode}</td>
+            </tr>
+        `;
+    }
+    emp_details_table.innerHTML = body;
+}
